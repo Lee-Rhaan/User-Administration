@@ -1,6 +1,6 @@
-package com.example.Administration.model;
+package com.example.Administration.persistence.model;
 
-import com.example.Administration.enums.UserRoles;
+import com.example.Administration.infrastructure.enums.UserRoles;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

@@ -1,6 +1,6 @@
-package com.example.Administration.repo;
+package com.example.Administration.persistence.repo;
 
-import com.example.Administration.model.AppUser;
+import com.example.Administration.persistence.model.AppUser;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

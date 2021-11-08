@@ -1,10 +1,11 @@
-package com.example.Administration.service;
+package com.example.Administration.api.service;
 
-import com.example.Administration.exception.AppUserNotFoundException;
-import com.example.Administration.model.AppUser;
-import com.example.Administration.repo.AppUserRepository;
+import com.example.Administration.infrastructure.exception.AppUserNotFoundException;
+import com.example.Administration.persistence.model.AppUser;
+import com.example.Administration.persistence.repo.AppUserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -35,6 +36,7 @@ public class AppUserService {
                 AppUserNotFoundException("User with id: " + id + " not found"));
     }
 
+    @Transactional
     public void deleteUserById(Long id)
     {
         appUserRepository.deleteAppUserById(id);

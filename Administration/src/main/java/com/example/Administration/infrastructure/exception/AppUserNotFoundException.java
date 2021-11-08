@@ -1,4 +1,4 @@
-package com.example.Administration.exception;
+package com.example.Administration.infrastructure.exception;
 
 public class AppUserNotFoundException extends RuntimeException {
 

@@ -1,4 +1,4 @@
-package com.example.Administration.enums;
+package com.example.Administration.infrastructure.enums;
 
 public enum UserRoles {
     ROLE_USER("ROLE_USER"), ROLE_ADMIN("ROLE_ADMIN");
