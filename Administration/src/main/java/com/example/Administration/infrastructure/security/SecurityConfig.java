@@ -25,12 +25,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable();
-        http.authorizeRequests().antMatchers("/api/v1/user/all").permitAll();
-        http.authorizeRequests().anyRequest().hasAnyAuthority("ROLE_ADMIN");
-
-        //at the moment everyone no matter their role can view a list of all the users in
-        //the database. I need to configure this so that the admin have access to all the
-        //other crud operations, and he/she alone.
+        http.formLogin().permitAll();
+        http.authorizeRequests().antMatchers("/api/v1/user/all").hasAnyAuthority("ROLE_ADMIN");
+        http.authorizeRequests().anyRequest().authenticated();
     }
 
 }
