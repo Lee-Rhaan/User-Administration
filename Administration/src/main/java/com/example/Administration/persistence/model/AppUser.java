@@ -7,6 +7,11 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.io.Serializable;
 
+/**
+ * This is the AppUser Entity class which will be mapped to the database.
+ * This entity will store all the users in this administration system.
+ */
+
 @Data
 @NoArgsConstructor
 @Entity
