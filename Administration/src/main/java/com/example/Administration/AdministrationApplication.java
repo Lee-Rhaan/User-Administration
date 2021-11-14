@@ -25,6 +25,7 @@ public class AdministrationApplication {
 		return new BCryptPasswordEncoder();
 	}
 
+	/*
 	@Bean
 	CommandLineRunner run(AppUserService appUserService)
 	{
@@ -33,4 +34,6 @@ public class AdministrationApplication {
 			appUserService.createUser(new AppUser("ben", "123", ROLE_USER));
 		};
 	}
+
+	 */
 }

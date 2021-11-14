@@ -7,26 +7,30 @@ import static org.junit.jupiter.api.Assertions.*;
 class AppUserServiceTest {
 
     @Test
-    void loadUserByUsername() {
+    void loadUserByUsernameTest() {
     }
 
     @Test
-    void listAllUsers() {
+    void listAllUsersTest() {
     }
 
     @Test
-    void createUser() {
+    void createUserTest() {
     }
 
     @Test
-    void updateUser() {
+    void updateUserTest() {
     }
 
     @Test
-    void findUserById() {
+    void findUserByIdTestSuccessful() {
     }
 
     @Test
-    void deleteUserById() {
+    void findUserByIdTestNotSuccessful() {
+    }
+
+    @Test
+    void deleteUserByIdTest() {
     }
 }
